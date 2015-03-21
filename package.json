@@ -1,24 +1,31 @@
 {
-    "name": "usgs-stream",
-    "version": "1.0.2",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bitangler/usgs-stream.git"
-    },
-    "home": "http://bitangler.com/tidbit/usgs-stream.html",
-    "description": "node.js app to asynchronously stream USGS water data",
-    "keywords": ["usgs", "water data"],
-    "main": "app.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app.js"
-    },
-    "author": "Kris Andersen <kris@bitangler.com>",
-    "license": "ISC",
-    "dependencies": {
-        "moment": "^2.9.0"
-    },
-    "engines": {
-        "node": "0.12.x"
-    }
+  "name": "usgs-stream",
+  "version": "1.0.2",
+  "description": "node.js app to asynchronously stream USGS water data",
+  "keywords": [
+    "usgs",
+    "water data"
+  ],
+  "homepage": "http://bitangler.com/tidbit/usgs-stream.html",
+  "bugs": "https://github.com/bitangler/usgs-stream/issues",
+  "license": "ISC",
+  "author": "Kris Andersen",
+  "main": "./lib/index.js",
+  "bin": {
+    "usgs_stream": "./bin/usgs_stream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitangler/usgs-stream.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "moment": "^2.9.0"
+  },
+  "engines": {
+    "node": "0.12.x"
+  }
 }

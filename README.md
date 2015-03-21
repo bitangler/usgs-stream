@@ -15,10 +15,8 @@ Installation
 Start Server
 ------------
 
-    node app.js
-
-    $ node app.js
-    Server running at http://127.0.0.1:5000/
+    $ usgs_stream
+    usgs-stream listening to http://127.0.0.1:5000/
 
 Usage
 -----
@@ -63,8 +61,8 @@ Example: Return data from March 3 to March 12, 2015
 This will return data from midnight on March 3 to 23:59 on March 12
 in the local time of the USGS site.
 
-The time can be provided using the ISO-8601 format `YYYY-MM-DDTHH:MM`,
-in the local time zone, or `2014-03-20T00:00Z` for UTC.
+The time can be provided using the ISO-8601 format `YYYY-MM-DDTHH:MM`
+in the local time zone, or `YYYY-MM-DDTHH:MMZ` for UTC.
 
 JSON Output
 -----------
@@ -83,7 +81,7 @@ The returned JSON object has the following format.
 * `data`: An array of data rows, where each row has the following properties
     - `data.agency_cd`: Agency collecting the data or maintaining the site
     - `data.site_no`: USGS site identification number
-    - `data.datetime`: Local date and time in ISO format
+    - `data.datetime`: Local date and time in ISO-8601 format
     - `data.tz_cd`: Local time zone
     - `data.nn_nnnnn`: Measured data value (described in `header.fields`)
     - `data.nn_nnnnn_cd`: Qualification code for this data point (described in `header.qualification`)
