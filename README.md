@@ -18,6 +18,11 @@ Start Server
     $ usgs_stream
     usgs-stream listening to http://127.0.0.1:5000/
 
+or
+
+    $ node app.js
+    usgs-stream listening to http://127.0.0.1:5000/
+
 Usage
 -----
 
