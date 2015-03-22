@@ -5,7 +5,7 @@
 var http = require('http');
 var url = require('url');
 var zlib = require('zlib');
-var usgs = require('./usgs.js');
+var usgs = require('./lib/usgs.js');
 
 function readRequest(request) {
     var requestUrl = url.parse(request.url, true);
@@ -19,7 +19,6 @@ function readRequest(request) {
 }
 
 var server = http.createServer(function(request, response) {
-
     var options = readRequest(request);
     //console.log('site, period: ' + options.site + ', ' + options.period);
 
