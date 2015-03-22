@@ -87,6 +87,22 @@ The returned JSON object has the following format.
     - `data.nn_nnnnn_cd`: Qualification code for this data point (described in `header.qualification`)
     - `data.utc`: UTC date and time in ISO-8601 format
 
+Scripting
+---------
+
+usgs-stream can be used in scripts to convert a readable USGS water
+data stream to a writable JSON stream.
+
+    #!/usr/bin/env node
+
+    var usgs = require('usgs-stream');
+    var fs = require('fs');
+
+    var rdb = fs.createReadStream('data.rdb')
+    var json = fs.createWriteStream('data.json')
+
+    usgs.transform(rdb, json);
+
 
 [1]: http://help.waterdata.usgs.gov/faq/about-tab-delimited-output
 [2]: http://waterservices.usgs.gov/rest/IV-Service.html
