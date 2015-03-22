@@ -1,6 +1,6 @@
 {
   "name": "usgs-stream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node.js app to asynchronously stream USGS water data",
   "keywords": [
     "usgs",
