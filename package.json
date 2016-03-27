@@ -1,12 +1,12 @@
 {
   "name": "usgs-stream",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node.js app to asynchronously stream USGS water data",
   "keywords": [
     "usgs",
     "water data"
   ],
-  "homepage": "http://bitangler.com/tidbit/usgs-stream.html",
+  "homepage": "https://github.com/bitangler/usgs-stream/",
   "bugs": "https://github.com/bitangler/usgs-stream/issues",
   "license": "ISC",
   "author": "Kris Andersen",
